@@ -1,0 +1,22 @@
+IF(NOT EXISTS "@CMAKE_BINARY_DIR@/install_manifest.txt")
+	MESSAGE(FATAL_ERROR "Cannot find install manifest:"
+		" \"@CMAKE_BINARY_DIR@/install_manifest.txt\"")
+ENDIF()
+
+FILE(READ "@CMAKE_BINARY_DIR@/install_manifest.txt" FILES)
+STRING(REGEX REPLACE "\n" ";" FILES "${FILES}")
+
+FOREACH(FILE ${FILES})
+	IF(EXISTS "$ENV{DESTDIR}${FILE}")
+		MESSAGE(STATUS "Uninstalling: $ENV{DESTDIR}${FILE}")
+
+		EXECUTE_PROCESS(COMMAND
+			@CMAKE_COMMAND@ -E remove "$ENV{DESTDIR}${FILE}"
+		RESULT_VARIABLE
+			RESULT)
+
+		IF(RESULT)
+			MESSAGE(FATAL_ERROR "Problem when removing \"$ENV{DESTDIR}${FILE}\"")
+		ENDIF()
+	ENDIF()
+ENDFOREACH()
