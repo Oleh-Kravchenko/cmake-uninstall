@@ -1,0 +1,5 @@
+cmake-uninstall (0.0.2) experimental; urgency=low
+
+  * Initial release
+
+ -- Oleh Kravchenko <oleg@kaa.org.ua>  Wed, 2 Jan 2019 00:04:24 +0200

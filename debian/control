@@ -1,0 +1,11 @@
+Source: cmake-uninstall
+Section: devel
+Priority: optional
+Maintainer: Oleh Kravchenko <oleg@kaa.org.ua>
+Build-Depends: cmake, git
+Homepage: https://gitlab.com/Oleh-Kravchenko/cmake-uninstall
+
+Package: cmake-uninstall
+Architecture: all
+Depends: cmake
+Description: Adds uninstall target to CMake projects
