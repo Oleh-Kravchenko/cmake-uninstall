@@ -1,0 +1,8 @@
+Code-Review+2: Maksym Kosharniy <kmvvmk@gmail.com>
+Verified+1: Oleh Kravchenko <oleg@kaa.org.ua>
+C-Make+1: Oleh Kravchenko <oleg@kaa.org.ua>
+Submitted-by: Oleh Kravchenko <oleg@kaa.org.ua>
+Submitted-at: Thu, 16 Jul 2020 16:18:20 +0000
+Reviewed-on: https://gerrit.kaa.org.ua/c/cmake/cmake-uninstall/+/803
+Project: cmake/cmake-uninstall
+Branch: refs/heads/master
