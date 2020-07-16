@@ -4,4 +4,4 @@ CONFIGURE_FILE("${CMAKE_CURRENT_LIST_DIR}/cmake_uninstall.cmake.in"
 ADD_CUSTOM_TARGET(uninstall
 "${CMAKE_COMMAND}" -P "${CMAKE_BINARY_DIR}/cmake_uninstall.cmake"
 COMMENT
-	"Uninstall the project...")
+	"Uninstall ${CMAKE_PROJECT_NAME}...")
