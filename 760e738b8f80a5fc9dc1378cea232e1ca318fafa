@@ -1,0 +1,7 @@
+Code-Review+2: Oleh Kravchenko <oleg@kaa.org.ua>
+Verified+1: Oleh Kravchenko <oleg@kaa.org.ua>
+Submitted-by: Oleh Kravchenko <oleg@kaa.org.ua>
+Submitted-at: Fri, 30 Sep 2022 13:08:35 +0000
+Reviewed-on: https://gerrit.kaa.org.ua/c/cmake/cmake-uninstall/+/1016
+Project: cmake/cmake-uninstall
+Branch: refs/heads/master
